@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Marketing Agency</div>
+            <ul>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#features">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <video autoplay muted loop id="hero-video">
+                <source src="rrr.mp4" type="video/mp4">
+            </video>
+            <div class="hero-content" data-aos="fade-in">
+                <h1>Welcome to Our Site</h1>
+                <p>Your Future Marketing Agency</p>
+                <a href="#features" class="btn">Learn More</a>
+            </div>
+        </section>
+        <section id="about" data-aos="fade-up" data-aos-delay="400">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <p>We are a leading marketing agency dedicated to helping businesses grow and succeed. Our team of experts specializes in various marketing strategies to ensure your brand reaches its full potential.</p>
+                <img src="abts.png" alt="About Us">
+            </div>
+        </section>
+        <section id="features">
+            <h2>Services</h2>
+            <div class="feature-box" data-aos="fade-up">
+                <img src="scl.png" alt="Social Media Management">
+                <h3>Social Media Management</h3>
+                <p>We offer comprehensive Social Media Management services designed to elevate your brand's online presence and engagement. Our expert team is dedicated to creating and executing a tailored social media strategy that drives results and fosters meaningful connections with your audience.</p>
+                <button id="load-more1" class="btn">Load More</button>
+                <div id="loadmore1" style="display: none;">
+                        <h3>Content Strategy Development</h3>
+                        <p>We conduct market research and create a comprehensive content plan tailored to your business needs and goals.</p>
+                        <h3>Content Creation</h3>
+                        <ul>
+                            <li>Blog Posts and Articles: Engaging content with SEO best practices.</li>
+                            <li>Ebooks and Whitepapers: In-depth insights establishing thought leadership.</li>
+                            <li>Infographics: Simplified visual information.</li>
+                            <li>Video Content: High-quality storytelling videos.</li>
+                        </ul>
+                </div>
+            </div>
+            <div class="feature-box" data-aos="slide-left">
+                <img src="seo.jpg" alt="SEO Services">
+                <h3>Search Engine Optimization (SEO) Service</h3>
+                <p>Our Search Engine Optimization (SEO) services are designed to enhance your website’s visibility on search engines, drive organic traffic, and improve your overall online presence. Our expert team uses the latest SEO techniques and strategies to ensure your website ranks higher in search engine results, attracting more potential customers to your business.</p>
+                <button id="load-more2" class="btn">Load More</button>
+                <div id="loadmore2" style="display: none;"> 
+                        <h3>Keyword Research</h3>
+                        <p>Identifying the best keywords to target for your industry to maximize visibility and traffic.</p>                                   
+                        <h3>On-Page Optimization</h3>
+                        <ul>
+                            <li>Meta Tags: Optimizing title tags, meta descriptions, and headers.</li>
+                            <li>Content Optimization: Ensuring content is relevant and keyword-rich.</li>
+                            <li>Technical SEO: Improving site speed, mobile-friendliness, and other technical factors.</li>
+                        </ul>
+                    </li>
+                        <h3>Off-Page Optimization</h3>
+                        <p>Building high-quality backlinks to enhance your site's authority and rankings.</p>
+                    </li>
+                </div>
+            </div>
+            <div class="feature-box" data-aos="slide-right">
+                <img src="cntnt.jpg" alt="Content Marketing">
+                <h3>Content Marketing Service</h3>
+                <p>We provide top-tier Content Marketing services designed to engage your audience, build brand authority, and drive conversions. Our team of skilled content creators and strategists develops high-quality content that resonates with your target market, ensuring your brand's message is effectively communicated across all channels.</p>
+                <button id="load-more3" class="btn">Load More</button>
+                <div id="loadmore3" style="display: none;">
+                        <h3>Content Strategy</h3>
+                        <p>Developing a tailored content strategy that aligns with your business goals and audience needs.</p>
+                        <h3>Content Creation</h3>
+                        <ul>
+                            <li>Blog Posts: Creating engaging and informative blog content.</li>
+                            <li>Social Media Posts: Crafting compelling posts for various social media platforms.</li>
+                            <li>Video Content: Producing high-quality videos to tell your brand's story.</li>
+                        </ul>
+                        <h3>Content Distribution</h3>
+                        <p>Distributing content through multiple channels to maximize reach and engagement.</p>
+                </div>
+            </div>
+        </section>
+        <section id="testimonials">
+            <h2>Customer Testimonials</h2>
+            <div class="testimonial" data-aos="fade-up">
+                <blockquote>
+                    "Marketing Agency has transformed our business!"
+                    <cite>- Satisfied Client</cite>
+                </blockquote>
+                <img src="cstmr.jpg" alt="Customer 1">
+            </div>
+            <div class="testimonial" data-aos="fade-up" data-aos-delay="100">
+                <blockquote>
+                    "Outstanding service and fantastic results!"
+                    <cite>- Happy Customer</cite>
+                </blockquote>
+                <img src="cstmr.jpg" alt="Customer 2">
+            </div>
+            <div class="testimonial" data-aos="fade-up" data-aos-delay="200">
+                <blockquote>
+                    "A game-changer for our online presence!"
+                    <cite>- Delighted Client</cite>
+                </blockquote>
+                <img src="cstmr.jpg" alt="Customer 3">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Marketing Agency. All rights reserved.</p>
+    </footer>
+    <script>
+        $(document).ready(function() {
+            $('#load-more1').click(function() {
+                $('#loadmore1').toggle();
+            });
+            $('#load-more2').click(function() {
+                $('#loadmore2').toggle();
+            });
+            $('#load-more3').click(function() {
+                $('#loadmore3').toggle();
+            });
+        });
+        AOS.init(); // Initialize AOS animations
+    </script>
+</body>
+</html>
